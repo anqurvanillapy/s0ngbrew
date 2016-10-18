@@ -34,8 +34,8 @@ def cli():
     """\
     Codec CLI for instant usage: Read and write.
     """
-    argv = vars(parse_args())
-    c = Codec(**argv)
+    argv = parse_args()
+    c = Codec(**vars(argv))
     c.run()
 
 

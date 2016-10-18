@@ -24,6 +24,8 @@ class Codec(object):
     def encode(self, f):
         """\
         Encode DRP
+
+        - This file format could be divided into the following parts
         """
         print('encode', f.read())
 
@@ -31,4 +33,6 @@ class Codec(object):
         """\
         Decode DRP
         """
-        print('decode', f.read())
+        f.seek(0x14)
+        unknown, filecount = unpack('>HH', f.read(4))
+        print(unknown, filecount)
