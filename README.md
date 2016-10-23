@@ -1,8 +1,10 @@
-drpcodec
-========
+muzinf0
+=======
 
-A simple compressor/decompressor for DRP file, originally inspired by and
-grabbed from [this cool mysterious gist](https://gist.github.com/dantarion/c84e7ae618c18cb735342156e6bc8849).
+A simple hack of `musicInfo.drp`, actually a DRP codec, originally inspired by
+and grabbed from [this cool mysterious gist](https://gist.github.com/dantarion/c84e7ae618c18cb735342156e6bc8849).
+In short, DRP is a binary file format that uses [zlib](http://www.zlib.net/) to
+compress XML data and store the filenames and their checksums.
 
 What And Why
 ------------

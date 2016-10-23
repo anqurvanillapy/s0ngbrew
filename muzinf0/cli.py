@@ -6,7 +6,7 @@ from codec import Codec
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="A simple compressor/decompressor for DRP file")
+        description="A simple hack for musicInfo.drp")
 
     parser.add_argument(
         'ifname',
