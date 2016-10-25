@@ -36,9 +36,8 @@ class Codec(object):
         """
         rxml_data = f.read()
         bxml_data = zlib.compress(rxml_data)
-        bxmls, rxmls = len(bxml_data) + 4, len(rxml_data) # 4 for rxmls
-        checksum = rxmls
-        unknown_margin = (0x20000001, 0x00000290, 0x00010001, 0)
+        bxmls, checksum = len(bxml_data) + 4, len(rxml_data) # 4 for rxmls
+        unknown_margin = (0x20000001, 0x0290, 0x00010001, 0)
         quadup = lambda x: (x, x, x, x)
         align = lambda x: x * b'\x00'
 
@@ -51,13 +50,14 @@ class Codec(object):
             # `musicinfo_db`, which might be game-specific
             of.write(bytes(os.path.splitext(self.ifname)[0].encode('ascii')))
             of.seek(0xa0)
-            of.write(pack('>8I', *unknown_margin, *quadup(bxmls)))
-            of.write(pack('>I', checksum))
+            of.write(pack('>9I',
+                *unknown_margin,
+                *quadup(bxmls),
+                checksum))
             of.write(bxml_data)
 
             remain = of.tell() % 0x10
-            if remain:
-                of.write(align(0x10 - remain))
+            if remain: of.write(align(0x10 - remain))
                 
     def decode(self, f):
         """\

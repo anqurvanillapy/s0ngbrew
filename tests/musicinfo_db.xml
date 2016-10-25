@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DB_DATA num="1" date="2013/12/16 16:15:31">
+  <DATA_SET index="0">
+    <uniqueId>118</uniqueId>
+    <id>ryogen</id>
+    <fumenFilePath>/%AOC%/</fumenFilePath>
+    <songFilePath>/%AOC%/</songFilePath>
+    <songFileName>DSONG_RYOGEN</songFileName>
+    <title>燎原ノ舞</title>
+    <order>4499</order>
+    <genreNo>7</genreNo>
+    <songTitlePath>/%AOC%/texture/</songTitlePath>
+    <songWordsPath></songWordsPath>
+    <secret></secret>
+    <ura></ura>
+    <dlc>○</dlc>
+    <debug></debug>
+    <batonInterval>2</batonInterval>
+    <branchEasy></branchEasy>
+    <branchNormal></branchNormal>
+    <branchHard></branchHard>
+    <branchMania></branchMania>
+    <starEasy>4</starEasy>
+    <starNormal>6</starNormal>
+    <starHard>7</starHard>
+    <starMania>10</starMania>
+    <donBg1pLumen></donBg1pLumen>
+    <donBg1pPath></donBg1pPath>
+    <donBg2pLumen></donBg2pLumen>
+    <donBg2pPath></donBg2pPath>
+    <chibiLumen></chibiLumen>
+    <chibiPath></chibiPath>
+    <danceLumen></danceLumen>
+    <dancePath></dancePath>
+    <danceNormalBgLumen></danceNormalBgLumen>
+    <danceNormalBgPath></danceNormalBgPath>
+    <danceFeverBgLumen></danceFeverBgLumen>
+    <danceFeverBgPath></danceFeverBgPath>
+    <danceDodaiLumen></danceDodaiLumen>
+    <danceDodaiPath></danceDodaiPath>
+    <feverLumen></feverLumen>
+    <feverPath></feverPath>
+    <rendaEffectLumen></rendaEffectLumen>
+    <rendaEffectPath></rendaEffectPath>
+  </DATA_SET>
+</DB_DATA>
